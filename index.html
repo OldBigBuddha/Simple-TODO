@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>TODO アプリ</title>
+</head>
+<body>
+  <div class="container">
+    <div id="board1" class="board" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+      <div class="board--header">
+        <h2>To do</h2>
+        <p class="board--header--add-button">+</p>
+      </div>
+      <div class="board--item-wrapper"></div>
+      <!-- <div id="item-1" class="draggable" draggable="true" ondragstart="onDragStart(event);">Draggable</div> -->
+    </div>
+    <div id="board2" class="board" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+      <div class="board--header">
+        <h2>Doing</h2>
+        <p class="board--header--add-button">+</p>
+      </div>
+      <div class="board--item-wrapper"></div>
+    </div>
+    <div id="board3" class="board" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+      <div class="board--header">
+        <h2>Done</h2>
+        <p class="board--header--add-button">+</p>
+      </div>
+      <div class="board--item-wrapper"></div>
+    </div>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
